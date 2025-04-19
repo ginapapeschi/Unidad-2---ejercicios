@@ -6,6 +6,17 @@ class GestorVenta:
     def __init__(self):
        self.__arreglo = np.zeros((5, 7), dtype=float)
 
+    ''' Otra forma de crear un arreglo bidimensional en Python usando listas.
+class GestorVenta:
+    __venta = []
+    __cantfarm = 5  # Número de sucursales
+    __cantdias = 7  # Días de la semana
+
+    def __init__(self):
+        for i in range(self.__cantfarm):
+            self.__venta.append([0] * self.__cantdias)
+    '''
+
     # Inciso a)
     def cargarSucursal(self):
         dia = int(input("\nIngrese el día de la semana (1-7): "))
